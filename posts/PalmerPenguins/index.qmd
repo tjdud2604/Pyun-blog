@@ -7,3 +7,32 @@ image: "image.jpg"
 ---
 
 
+```{python}
+from palmerpenguins import load_penguins
+penguins = load_penguins()
+
+penguins
+penguins.info()
+
+df_p = pd.DataFrame(penguins)
+
+df_p
+
+species_bill_l = df_p.groupby("species")['bill_length_mm'].mean()
+species_bill_l
+
+species_bill_d = df_p.groupby("species")['bill_depth_mm'].mean()
+species_bill_d
+
+species_flipper = df_p.groupby("species")['flipper_length_mm'].mean()
+species_flipper
+
+species_g = df_p.groupby("species")['body_mass_g'].mean()
+species_g
+
+species_island_count = penguins.groupby(['species', 'island']).size()
+species_island_count
+
+
+penguins['species'].describe()
+```
