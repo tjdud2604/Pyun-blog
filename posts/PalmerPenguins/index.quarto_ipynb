@@ -1,0 +1,64 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"PalmerPenguins\"\n",
+        "author: \"SeoYoung\"\n",
+        "date: \"2025-03-07\"\n",
+        "categories: [news, code, analysis]\n",
+        "image: \"image.jpg\"\n",
+        "---"
+      ],
+      "id": "8f8856c5"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "from palmerpenguins import load_penguins\n",
+        "penguins = load_penguins()\n",
+        "\n",
+        "penguins\n",
+        "penguins.info()\n",
+        "\n",
+        "df_p = pd.DataFrame(penguins)\n",
+        "\n",
+        "df_p\n",
+        "\n",
+        "species_bill_l = df_p.groupby(\"species\")['bill_length_mm'].mean()\n",
+        "species_bill_l\n",
+        "\n",
+        "species_bill_d = df_p.groupby(\"species\")['bill_depth_mm'].mean()\n",
+        "species_bill_d\n",
+        "\n",
+        "species_flipper = df_p.groupby(\"species\")['flipper_length_mm'].mean()\n",
+        "species_flipper\n",
+        "\n",
+        "species_g = df_p.groupby(\"species\")['body_mass_g'].mean()\n",
+        "species_g\n",
+        "\n",
+        "species_island_count = penguins.groupby(['species', 'island']).size()\n",
+        "species_island_count\n",
+        "\n",
+        "\n",
+        "penguins['species'].describe()"
+      ],
+      "id": "a5ab27e0",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "C:\\Users\\USER\\.conda\\envs\\ls_pyun\\share\\jupyter\\kernels\\python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
