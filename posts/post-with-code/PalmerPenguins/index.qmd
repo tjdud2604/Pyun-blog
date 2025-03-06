@@ -1,0 +1,9 @@
+---
+title: "PalmerPenguins"
+author: "SeoYoung"
+date: "2025-03-07"
+categories: [news, code, analysis]
+image: "image.jpg"
+---
+
+
