@@ -3,7 +3,7 @@ title: "PalmerPenguins"
 author: "SeoYoung"
 date: "2025-03-07"
 categories: [news, code, analysis]
-image: "image.jpg"
+image: "https://search.pstatic.net/sunny/?src=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fbe%2FSGI-2016-South_Georgia_%2528Fortuna_Bay%2529%25E2%2580%2593King_penguin_%2528Aptenodytes_patagonicus%2529_04.jpg&type=sc960_832"
 ---
 
 
