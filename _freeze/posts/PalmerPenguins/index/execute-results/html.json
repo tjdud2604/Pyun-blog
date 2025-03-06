@@ -1,0 +1,12 @@
+{
+  "hash": "6af4389ae0472b8aad5dfe91e4d57592",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"PalmerPenguins\"\nauthor: \"SeoYoung\"\ndate: \"2025-03-07\"\ncategories: [news, code, analysis]\nimage: \"image.jpg\"\n---\n\n::: {#134a7186 .cell execution_count=1}\n``` {.python .cell-code}\nimport pandas as pd\n\nfrom palmerpenguins import load_penguins\npenguins = load_penguins()\n\npenguins\npenguins.info()\n\ndf_p = pd.DataFrame(penguins)\n\ndf_p\n\nspecies_bill_l = df_p.groupby(\"species\")['bill_length_mm'].mean()\nspecies_bill_l\n\nspecies_bill_d = df_p.groupby(\"species\")['bill_depth_mm'].mean()\nspecies_bill_d\n\nspecies_flipper = df_p.groupby(\"species\")['flipper_length_mm'].mean()\nspecies_flipper\n\nspecies_g = df_p.groupby(\"species\")['body_mass_g'].mean()\nspecies_g\n\nspecies_island_count = penguins.groupby(['species', 'island']).size()\nspecies_island_count\n\n\npenguins['species'].describe()\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 344 entries, 0 to 343\nData columns (total 8 columns):\n #   Column             Non-Null Count  Dtype  \n---  ------             --------------  -----  \n 0   species            344 non-null    object \n 1   island             344 non-null    object \n 2   bill_length_mm     342 non-null    float64\n 3   bill_depth_mm      342 non-null    float64\n 4   flipper_length_mm  342 non-null    float64\n 5   body_mass_g        342 non-null    float64\n 6   sex                333 non-null    object \n 7   year               344 non-null    int64  \ndtypes: float64(4), int64(1), object(3)\nmemory usage: 21.6+ KB\n```\n:::\n\n::: {.cell-output .cell-output-display execution_count=1}\n```\ncount        344\nunique         3\ntop       Adelie\nfreq         152\nName: species, dtype: object\n```\n:::\n:::\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
