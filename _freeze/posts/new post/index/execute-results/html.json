@@ -1,0 +1,12 @@
+{
+  "hash": "86b48176db45ffa712535454c7dd5077",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"나의 첫 블로그 포스트\"\nauthor: \"Seoyoung\"\ndate: \"2025-03-07\"\ncategories: [news, code, numpy]\nimage: \"image.jpg\"\n---\n\n\n## 파이썬 데이터 분석\n\n### 넘파이\n\n\n넘파이 패키지를 볼러오기\n\n::: {#28ae865a .cell execution_count=1}\n``` {.python .cell-code}\nimport numpy as np\n\na = np.array([3,2,15])\na\n```\n\n::: {.cell-output .cell-output-display execution_count=1}\n```\narray([ 3,  2, 15])\n```\n:::\n:::\n\n\n### 판다스\n\n판다스 패키지 불러오기\n\n::: {#143cf0fe .cell execution_count=2}\n``` {.python .cell-code}\nimport pandas as pd\n```\n:::\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

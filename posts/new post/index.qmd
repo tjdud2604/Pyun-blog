@@ -1,0 +1,30 @@
+---
+title: "나의 첫 블로그 포스트"
+author: "Seoyoung"
+date: "2025-03-07"
+categories: [news, code, numpy]
+image: "image.jpg"
+---
+
+## 파이썬 데이터 분석
+
+### 넘파이
+
+
+넘파이 패키지를 볼러오기
+
+```{python}
+import numpy as np
+
+a = np.array([3,2,15])
+a
+```
+
+
+### 판다스
+
+판다스 패키지 불러오기
+
+```{python}
+import pandas as pd
+```
